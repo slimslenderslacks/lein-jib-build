@@ -7,7 +7,7 @@
   :resource-paths ["lib"]
 
   :dependencies [[org.clojure/clojure "1.10.1"]
-                 [com.google.cloud.tools/jib-core "0.12.1-SNAPSHOT-GUAVASHADOW"]
+                 [com.google.cloud.tools/jib-core "0.20.0"]
                  [com.cognitect.aws/api "0.8.391"]
                  [com.cognitect.aws/endpoints "1.1.11.664"]
                  [com.cognitect.aws/ecr "762.2.557.0"]

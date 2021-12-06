@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.10.3"}
+        leiningen-core/leiningen-core {:mvn/version "2.9.8"}
+        leiningen/leiningen {:mvn/version "2.9.8"}
+        com.google.cloud.tools/jib-core {:mvn/version  "0.20.0"} 
+        com.cognitect.aws/api {:mvn/version "0.8.391"}        
+        com.cognitect.aws/endpoints {:mvn/version "1.1.11.664"}        
+        com.cognitect.aws/ecr {:mvn/version "762.2.557.0"}
+        com.cognitect.aws/sts {:mvn/version "747.2.533.0"}}}

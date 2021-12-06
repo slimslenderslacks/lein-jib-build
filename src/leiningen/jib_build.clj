@@ -4,8 +4,8 @@
                                            Containerizer
                                            TarImage
                                            RegistryImage
-                                           AbsoluteUnixPath
                                            ImageReference CredentialRetriever Credential]
+           [com.google.cloud.tools.jib.api.buildplan AbsoluteUnixPath]
            [java.io File]
            [java.util List ArrayList Optional]
            [java.nio.file Paths])
@@ -21,11 +21,11 @@
 (def default-entrypoint ["java" "-jar"])
 
 
-(defn- into-list
+(defn into-list
   [& args]
   (ArrayList. ^List args))
 
-(defn- get-path [filename]
+(defn get-path [filename]
   (Paths/get (.toURI (File. ^String filename))))
 
 (defn- to-imgref [image-config]
