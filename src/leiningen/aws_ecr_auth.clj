@@ -50,7 +50,8 @@
 
                  :environment
                  (credentials/environment-credentials-provider))]
-    (aws/client {:api api :credentials-provider crp})
+    (aws/client (merge {:api api :credentials-provider crp}
+                       (select-keys credentials-config [:region])))
     (aws/client {:api api})))
 
 (defn ecr-auth [credentials-config]
